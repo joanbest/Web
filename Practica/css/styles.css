@@ -32,4 +32,19 @@ ul{
 
 li:hover{
     background-color: #555;
+    border-radius: 10px;
+    padding: 5px;
 }
+
+.texto{
+    margin: 20px;
+    text-align: justify;
+    
+}
+.footer{
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+

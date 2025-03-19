@@ -1,0 +1,21 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+#menu{
+    background-color: #0f0;
+    }
+
+#uno{
+background-color: #f1f;
+}
+
+#dos{
+background-color: #f00;
+}
+
+#tres{
+background-color: #0f0;
+}
+
