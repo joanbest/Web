@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Imágenes</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            gap: 10px;
+            grid-template-areas: 
+                "img1 img1 img2 img3" 
+                "img1 img1 img4 img4";
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 200px);
+            background-color: #46c;
+            padding: 10px;
+        }
+
+        .img1 {
+            grid-area: img1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .img2 {
+            grid-area: img2;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .img3 {
+            grid-area: img3;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .img4 {
+            grid-area: img4;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grid-container">
+        <img class="img1" src="img/gorillaz.jpg" alt="Gorillaz" title="Gorillaz">
+        <img class="img2" src="https://pm1.aminoapps.com/7150/2569590f91c359642c7c3a5547862961106865c3r1-831-942v2_uhq.jpg" alt="Mob" title="Mob">
+        <img class="img3" src="https://los40.com/resizer/v2/CVE75YZVVRNITM3IGSQ46I6DIE.jpg?auth=4ff9d53b76826df96459bb509e4825b3739cea0e3a309d9f1ebe3af91cc52644&quality=70&width=1200&height=900&focal=750,290" alt="Daft Punk" title="Daft Punk">
+        <img class="img4" src="https://www.latercera.com/resizer/v2/FIN7ZFLY2VF7ZIO3F4VAH7DJ5I.jpg?quality=80&smart=true&auth=ab529fa040dc7e3c353a1bb91f6fac628a8e0efc71d8873f1e1780f178b09179&width=690&height=502" alt="Rick and Morty" title="Rick and Morty">
+    </div>
+</body>
+
+</html>

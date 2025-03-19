@@ -13,9 +13,18 @@
     overflow-x: hidden;
   }
 
-  /* Slider */
+ #servicios{
+  position: static;
+ }
 
-  
+#tramites{
+  margin-top:30px ;
+}
+
+#carousel{
+  margin-top:30px ;
+  margin-bottom: 30px;
+}
   
   /* Barra superior */
   .top-bar {
@@ -285,6 +294,47 @@
   .floating-menu-item a:hover {
     transform: scale(1.2);
   }
+  
+  /* Estilos personalizados para el slider */
+  .carousel-inner img {
+    transition: transform 0.5s ease;
+  }
+  
+  .carousel-inner img:hover {
+    transform: scale(1.05);
+  }
+  
+  .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+  }
+
+  /* Permite que los submenús anidados funcionen correctamente */
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-menu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  margin-top: -1px;
+  display: none;
+}
+
+.dropdown-submenu:hover > .dropdown-menu {
+  display: block;
+}
+
+
   
   /* Responsive */
   @media (max-width: 992px) {

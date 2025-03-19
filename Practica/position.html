@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .menu {
+           width: max-content; 
+           margin: 40px auto;
+           background-color: #46c7;
+           color: white;
+           padding: 0;
+        }
+
+        .menu__parent {
+           position: relative;
+           padding: 1rem 3rem;
+          
+        }
+
+        .menu__parent:hover .menu__child {
+            clip-path: circle(150% at center top);
+        }
+
+        .menu__link {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu__child{
+            background-color: chocolate;
+            display: grid;
+            padding: 2rem 1rem;
+            list-style: none;
+            width: max-content;
+            gap: 1rem;
+            position: absolute;
+            top: 100%;
+            right: 0;
+            clip-path: circle(0% at top center);
+            transition: clip-path 0.5s;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="menu">
+        <li class="menu__parent">
+            <a href="#" class="menu__link">Servicios</a>
+            <ul class="menu__child">
+                <li>
+                    <a href="#" class="menu__link">Servicio 1</a>
+                </li>
+                <li>
+                    <a href="#" class="menu__link">Servicio 2</a>
+                </li>
+                <li>
+                    <a href="#" class="menu__link">Servicio 3</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

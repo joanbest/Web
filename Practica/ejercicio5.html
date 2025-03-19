@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 - Footer</title>
+    <style>
+        .footer {
+            background-color: #4c6;
+            color: white;
+            width: 100vw;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+        }
+
+        .container {
+            position: relative; 
+            width: 300px;
+        }
+
+        .img1 {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 255, 255, 0.5); /* Transparencia */
+            color: black;
+            padding: 10px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .overlay h1 {
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img class="img1" src="img/gorillaz.jpg" alt="Gorillaz" title="Gorillaz">
+        <div class="overlay">
+            
+            <h1>Los Vengadores</h1>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>&copy Este es el pie de página</p>
+    </footer>
+</body>
+
+</html>
